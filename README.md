@@ -20,3 +20,5 @@ Temas Utilizados
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
 
+<img width="1240" height="912" alt="theCoffeeListPreview" src="https://github.com/user-attachments/assets/573681f3-f13f-4506-9708-1cfd702fdace" />
+<img width="1350" height="900" alt="image2" src="https://github.com/user-attachments/assets/b83ffca3-1045-4464-9f5f-10c7b9a57060" />
