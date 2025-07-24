@@ -2,12 +2,14 @@ import { TrashIcon } from '@phosphor-icons/react'
 import styled from 'styled-components'
 
 export const CoffeeCartItemContainer = styled.div`
-width: 80%;
+width: 100%;
 display: flex;
 justify-content: space-between;
-margin: 2.5rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding: 1rem;
 border-bottom: 1px solid ${props => props.theme.gray['gray-400']};
-padding-bottom: 2.188rem;
+
 
 img {
   width: 64px;
@@ -22,12 +24,19 @@ font-weight: normal;
 }
 
 span {
-grid-column: 3;
 font-family: ${props => props.theme['font-family'].roboto};
-color: ${props => props.theme.brown['brown-400']};
+color: ${props => props.theme.warm['terracotta-600']};
 font-size: 1rem;
 font-weight: bold;
+white-space: nowrap; 
 }
+
+@media (max-width: 966px) {
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
 `
 
 export const CoffeeItemInfoContainer = styled.div`
@@ -35,7 +44,7 @@ display: grid;
 gap: 0.725rem;
 align-items: center;
 justify-content: center;
-grid-template-columns: 1fr, 2fr, 1fr;
+grid-template-columns: 1fr 2fr 1fr;
 grid-template-rows: repeat(2, auto); 
 `
 
@@ -44,6 +53,7 @@ export const CoffeeCartItemButtonContainer = styled.div`
   display: flex;
   grid-gap: 0.5rem;
   max-height: 35px;  
+
 `
 
 export const RemoveButtonContainer = styled.div`
@@ -61,7 +71,7 @@ cursor: pointer;
 
 label {
   font-family: ${props => props.theme['font-family'].roboto};
-  color: ${props => props.theme.brown['brown-400']};
+  color: ${props => props.theme.brown['brown-800']};
   font-size: 0.75rem;
   line-height: 160%;
   font-weight: normal;
@@ -70,6 +80,6 @@ label {
 `
 
 export const RemoveButton = styled(TrashIcon)`
-color: ${props => props.theme.purple['purple-500']};
+color: ${props => props.theme.warm['burgundy-800']};
 font-style: bold;
 `

@@ -21,6 +21,14 @@ grid-template-rows: repeat(2, auto);
 margin: auto;
 margin-top: 12rem;
 gap: 3rem;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    img {
+      display: none;
+    }
+  }
 `
 
 export const TitleInfoContainer = styled.div`
@@ -79,10 +87,13 @@ grid-row: 1 / 3;
 padding: 0.5rem;
 border-radius: 999px;
 margin: 0.25rem;
+width: 30px;
+height: 32px;
 `
 
 export const MapPinIconContainer = styled(IconContainer)`
 background-color: ${props => props.theme.purple['purple-500']};
+
 `
 
 export const TimerIconContainer = styled(IconContainer)`

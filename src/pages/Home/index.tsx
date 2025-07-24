@@ -9,8 +9,8 @@ export function Home() {
   return (
     <HomeContainer>
       <ShowcaseHome />
+      <h2>Nossos cafés</h2>
       <CoffeeListContainer>
-        <h2>Nossos cafés</h2>
         {coffeeListMocked.map((coffee) =>
           <CoffeeCard
             key={coffee.id}

@@ -6,7 +6,7 @@ export interface DeliveryInfoType {
   cep: string;
   street: string;
   number: string;
-  addresComplementInput?: number;
+  complement?: string;
   district: string;
   city: string;
   state: string;
@@ -14,6 +14,7 @@ export interface DeliveryInfoType {
 }
 
 export function orderReducer(state: OrderStateType,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   action: any): OrderStateType {
   switch (action.type) {
     case ActionTypes.ADD_ORDERED_COFFEE: {

@@ -6,33 +6,29 @@ display: flex;
 height: 34rem;
 background: radial-gradient(
       ellipse at 25% 65%,
-      rgba(235, 193, 54, 0.1),
-      transparent 20%
+      rgba(255, 135, 37, 0.16),
+      transparent 100%
     ),radial-gradient(
       ellipse at 70% 50%,
-      rgba(235, 193, 54, 0.1),
+      rgba(172, 85, 5, 0.74),
       transparent 40%
     ),radial-gradient(
       ellipse at 30% 30%,
-      rgba(235, 193, 54, 0.1),
+      rgba(156, 98, 10, 0.5),
       transparent 40%
     ),radial-gradient(
       ellipse at 25% 20%,
-      rgba(128, 71, 248, 0.04),
-      transparent 100%
+      rgba(248, 0, 0, 0.1),
+      transparent 50%
     );
-
-img {
-  margin: auto auto auto 2.5rem;
-}
-
-@media (max-width:768px){
-  display: none;
-}
 `
 export const ShowcaseTitle = styled.div`
-  width: 588px;
-  margin: auto 0 auto auto;
+display: flex;
+flex-direction: column;
+margin: auto;
+align-items: center;
+align-content: center;
+width: 36.75rem;
 
   h1 {
   font-family: ${props => props.theme['font-family'].baloo};
@@ -82,6 +78,19 @@ p:nth-child(3) span {
     background-color: ${props => props.theme.yellow['yellow-500']};
 }
 p:nth-child(4) span {
-    background-color: ${props => props.theme.purple['purple-500']};
+    background-color: ${props => props.theme.warm['burgundy-800']};
 }
+`
+
+export const ImageContainer = styled.div`
+  display: flex;
+  margin: auto;
+  max-width: 100%;
+  width: 29.75rem;
+  height: 23.25rem;
+  padding: 0;
+
+    @media (max-width: 768px) {
+      display: none;
+  }
 `

@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 export const CheckoutContainer = styled.form`
-background-color: ${props => props.theme.gray['gray-100']};
+background-color: ${props => props.theme.warm['cream-100']};
 display: flex;
 margin: auto;
 justify-content: space-between;
 margin-top: 9rem ;
 max-width: 80%;
-min-height: 550px;
+min-height: 90vh;
 gap: 2rem;
 
 h1 {
@@ -25,6 +25,16 @@ h2 {
   display: flex;
   margin-top: 50%;
 }
+
+  @media (max-width: 1205px) {
+      max-width: 98%;
+  }
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+  }
+  
 `
 
 export const SelectedCoffeesContainer = styled.div`
@@ -32,6 +42,10 @@ display: flex;
 flex-direction: column;
 width: 60%;
 gap: 1rem;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `
 
 export const SelectedCoffees = styled.div`
@@ -41,6 +55,7 @@ border-radius: 0.5rem 2.188rem ;
 `
 export const SelectedCoffeesBottom = styled.div`
 display: grid;
+padding-top: 32px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto auto;
 margin: -1.25rem 2.5rem 2.5rem 2.5rem;
@@ -68,6 +83,14 @@ h3 {
 h3:nth-of-type(2) {
   display: flex;
   justify-content: end;
+}
+
+@media (max-width: 550px) {
+width: 100%;
+max-width: 100%;
+padding: 1rem;
+margin: auto;
+
 }
 `
 export const ConfirmCheckoutButtom = styled.button`

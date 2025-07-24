@@ -1,5 +1,5 @@
 💻 Sobre o projeto
-📄 Coffee Delivery - é um projeto desenvolvido como desafio do segundo modulo de react da rocketseat.
+📄 The Coffee List - é um projeto desenvolvido como desafio do segundo modulo de react da rocketseat.
 A intenção principal do desenvolvimento é reforçar o conhecimento aprendido no curso até o momento.
 
 Temas Utilizados 
@@ -19,5 +19,4 @@ Temas Utilizados
 - Exibir o total de itens no carrinho no Header
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
-<img src="src/assets/gitHubImage/coffeeDeliveryImageProject.jpg" alt="Texto alternativo" width="600">
 

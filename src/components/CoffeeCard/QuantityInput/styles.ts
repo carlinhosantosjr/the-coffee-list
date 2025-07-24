@@ -1,4 +1,4 @@
-import { Minus, Plus } from '@phosphor-icons/react'
+import { MinusIcon, PlusIcon } from '@phosphor-icons/react'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -24,24 +24,24 @@ max-width: 1.4rem;
 pointer-events: none;
 `
 
-export const DecreaseButton = styled(Minus)<React.SVGProps<SVGSVGElement>>`
-color: ${props => props.theme.purple['purple-500']};
+export const DecreaseButton = styled(MinusIcon)<React.SVGProps<SVGSVGElement>>`
+color: ${props => props.theme.brown['brown-600']};
 font-size: 0.875rem;
 cursor: pointer;
 user-select: none;
 
 &:hover {
-  color: ${props => props.theme.purple['purple-700']};
+  color: ${props => props.theme.brown['brown-800']};
 }
 `
 
-export const IncreaseButton = styled(Plus)<React.SVGProps<SVGSVGElement>>`
-color: ${props => props.theme.purple['purple-500']};
+export const IncreaseButton = styled(PlusIcon)<React.SVGProps<SVGSVGElement>>`
+color: ${props => props.theme.brown['brown-600']};
 font-size: 0.875rem;
 cursor: pointer;
 user-select: none;
 
 &:hover {
-  color: ${props => props.theme.purple['purple-700']};
+  color: ${props => props.theme.brown['brown-800']};
 }
 `

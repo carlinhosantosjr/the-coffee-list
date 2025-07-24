@@ -1,6 +1,6 @@
 import {
-  Bank, CreditCard, CurrencyDollar, MapPinLine,
-  Money,
+  BankIcon, CreditCardIcon, CurrencyDollarIcon, MapPinLineIcon,
+  MoneyIcon,
 } from '@phosphor-icons/react'
 import {
   AddressComplementInput,
@@ -37,7 +37,7 @@ export function DeliveryInfo(props:DeliveryInfoProps) {
       <h1>Complete seu pedido</h1>
       <FormContainer>
         <HeaderFormContainer>
-          <MapPinLine
+          <MapPinLineIcon
             size={22} weight="regular"
             color={theme.yellow['yellow-700']}
           />
@@ -77,7 +77,7 @@ export function DeliveryInfo(props:DeliveryInfoProps) {
       </FormContainer>
       <PaymentMethodContainer>
         <HeaderPaymentContainer>
-          <CurrencyDollar
+          <CurrencyDollarIcon
             size={22} weight="regular"
             color={theme.purple['purple-500']}
           />
@@ -92,7 +92,7 @@ export function DeliveryInfo(props:DeliveryInfoProps) {
           $active={props.methodValue === 'credit'}
           onClick={() => selectMethod('credit')}
         >
-          <CreditCard size={16} color={theme.purple['purple-500']} />
+          <CreditCardIcon size={16} color="blue" />
           CARTÃO DE CRÉDITO
         </PaymentButton>
         <PaymentButton
@@ -100,14 +100,14 @@ export function DeliveryInfo(props:DeliveryInfoProps) {
           onClick={() => selectMethod('debit')}
 
         >
-          <Bank size={16} color={theme.purple['purple-500']} />
+          <BankIcon size={16} color="black" />
           CARTÃO DE DÉBITO
         </PaymentButton>
         <PaymentButton
           $active={props.methodValue === 'money'}
           onClick={() => selectMethod('money')}
         >
-          <Money size={16} color={theme.purple['purple-500']} />
+          <MoneyIcon size={16} color="green" />
           DINHEIRO
         </PaymentButton>
       </PaymentMethodContainer>

@@ -17,11 +17,18 @@ export const defaultTheme = {
     'gray-400': '#E6E5E5',
   },
   brown: {
-    'brown-100': '#D7D5D5',
-    'brown-200': '#8D8686',
-    'brown-400': '#574F4D',
-    'brown-600': '#403937',
-    'brown-800': '#272221',
+    'brown-100': '#EDE6E1',
+    'brown-200': '#CBB6A4',
+    'brown-400': '#9B6D4E',
+    'brown-600': '#6B3F2B',
+    'brown-800': '#3A2214',
+  },
+  warm: {
+    'cream-100': '#FFF8F0', // Leve, ideal para fundos
+    'gold-200': '#F7D9B9',  // Tom de caramelo claro
+    'rose-400': '#D8A49A',  // Rosado quente, sofisticado
+    'terracotta-600': '#A75D4E', // Bem quente, combina com o brown-400
+    'burgundy-800': '#5E2C2C', // Profundo, elegante, sem roubar atenção
   },
   'font-family': {
     baloo: '"Baloo 2", sans-serif;',

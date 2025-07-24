@@ -9,8 +9,8 @@ import {
   TimerIconContainer,
   TitleInfoContainer,
 } from './styles'
-import successImg from '../../assets/successImg.svg'
-import { CurrencyDollar, MapPin, Timer } from '@phosphor-icons/react'
+import successImg from '../../assets/successImg.png'
+import { CurrencyDollarIcon, MapPinIcon, TimerIcon } from '@phosphor-icons/react'
 import { useContext } from 'react'
 import { OrderedCoffeesContext } from '../../contexts/OrderedCoffeesContext'
 
@@ -42,7 +42,7 @@ export function OrderSuccess() {
             <OrderInfoContainer>
               <PhraseContainer>
                 <MapPinIconContainer>
-                  <MapPin size={16} weight="fill" color="white" />
+                  <MapPinIcon size={16} weight="fill" color="white" />
                 </MapPinIconContainer>
                 <p>Entrega em
                   <span> Rua {OrderState.deliveryInfo.street}
@@ -56,14 +56,14 @@ export function OrderSuccess() {
               </PhraseContainer>
               <PhraseContainer>
                 <TimerIconContainer>
-                  <Timer size={16} weight="fill" color="white" />
+                  <TimerIcon size={16} weight="fill" color="white" />
                 </TimerIconContainer>
                 <p>Previsão de entrega</p>
                 <span>20 min - 30 min</span>
               </PhraseContainer>
               <PhraseContainer>
                 <CurrencyIconContainer>
-                  <CurrencyDollar size={16} color="white" />
+                  <CurrencyDollarIcon size={16} color="white" />
                 </CurrencyIconContainer>
                 <p>Pagamento na entrega</p>
                 <span>
@@ -72,7 +72,7 @@ export function OrderSuccess() {
               </PhraseContainer>
             </OrderInfoContainer>
           </GradientBorderContainer>
-          <img src={successImg} alt="" />
+          <img src={successImg} alt="" width="490px" />
         </OrderSuccessContainer>
         : <h2>Nenhum pedido encontrado.</h2>}
     </MainSuccessContainer>

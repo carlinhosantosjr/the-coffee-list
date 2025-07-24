@@ -85,7 +85,7 @@ export function Checkout() {
                       value={coffeeSelected.value}
                     />
                   ))
-                : <h1>hehe</h1>}
+                : ''}
               {coffeeListSelected.length
                 ? <SelectedCoffeesBottom>
                   <label>Total de itens</label>
@@ -100,7 +100,7 @@ export function Checkout() {
                     <p>CONFIRMAR PEDIDO</p>
                   </ConfirmCheckoutButtom>
                 </SelectedCoffeesBottom>
-                : <></>}
+                : ''}
             </SelectedCoffees>
           </SelectedCoffeesContainer>
         </>

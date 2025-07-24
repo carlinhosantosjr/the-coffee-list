@@ -1,33 +1,37 @@
-import { ShoppingCartSimple } from '@phosphor-icons/react'
+import { ShoppingCartSimpleIcon } from '@phosphor-icons/react'
 import styled from 'styled-components'
 
 export const CoffeeContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 0.5rem;
-background-color: ${props => props.theme.gray['gray-200']};
-max-width: 16rem;
-max-height: 19.375rem;
-border-radius: 5px 25px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: ${props => props.theme.gray['gray-100']};
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 25px;
+  border: 1px solid ${props => props.theme.brown['brown-100']};
 
-img {
-  margin-top: -1.25rem;
-}
+  img {
+    margin-top: -1.25rem;
+    max-width: 100%;
+    height: auto;
+  }
 
-h3 {
-  color: ${props => props.theme.brown['brown-600']};
-  font-family: ${props => props.theme['font-family'].baloo};
-}
+  h3 {
+    color: ${props => props.theme.brown['brown-600']};
+    font-family: ${props => props.theme['font-family'].baloo};
+    text-align: center;
+  }
 
-p {
-  color: ${props => props.theme.brown['brown-200']};
-  font-family: ${props => props.theme['font-family'].roboto};
-  font-size: 0.875rem;
-  line-height: 130%;
-  text-align: center;
-  margin: 0 0.625rem;
-}
+  p {
+    color: ${props => props.theme.brown['brown-200']};
+    font-family: ${props => props.theme['font-family'].roboto};
+    font-size: 0.875rem;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 0.625rem;
+  }
 `
 
 export const LabelContainer = styled.div`
@@ -66,23 +70,23 @@ span {
   line-height: 130%;
   min-width: 4rem;
   font-family: ${props => props.theme['font-family'].baloo};
-  color: ${props => props.theme.brown['brown-400']};
+  color: ${props => props.theme.brown['brown-600']};
 }
 `
 
 export const BuyButtonContainer = styled.div`
 display: flex;
-background-color: ${props => props.theme.purple['purple-700']};
+background-color: ${props => props.theme.warm['burgundy-800']};
 border-radius: 5px;
 padding: 0.313rem;
 cursor: pointer;
 user-select: none;
 
 &:hover {
-  background-color: ${props => props.theme.purple['purple-500']};
+  background-color: ${props => props.theme.warm['terracotta-600']};
 }
 `
 
-export const BuyButton = styled(ShoppingCartSimple)`
+export const BuyButton = styled(ShoppingCartSimpleIcon)`
 color: ${props => props.theme.white};
 `
